@@ -1,0 +1,48 @@
+/* LANDING PAGE SCSS */
+
+.title-text h1 {
+  font-family: $base-font-family;
+  font-weight: 600;
+  font-size: 3em;
+  display: inline;
+}
+
+.title {
+  @extend .title-text;
+  color: $grey-color-dark;
+  float: left;
+  padding-top: 15%;
+  width: 50%;
+
+  //TODO: get media query to work with build;
+  @include media-query($on-palm) {
+    font-size: 0.5em;
+    padding-top: 40%;
+    width: 70%;
+  }
+
+}
+
+
+.instructions {
+  @extend .description;
+  display: inline;
+}
+
+// align the two boxes vertically instead of horizontally;
+@include media-query($on-palm) {
+  .page-content.align-items {
+    display: block;
+  }
+}
+
+//code {
+//  max-width: 65%;
+//  @include media-query($on-palm) {
+//    max-width: none;
+//  }
+//}
+
+pre {
+  width: 100%;
+}

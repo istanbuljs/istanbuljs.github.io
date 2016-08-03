@@ -1,0 +1,70 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
+
+
+// Our variables
+$base-font-family: "Open Sans", serif;
+$base-font-size:   1.1em;
+$small-font-size:  $base-font-size * 0.875;
+$base-line-height: 1.5;
+
+$base-font-weight: 600;
+
+$sans-font-family: "Work Sans", sans-serif;
+$spacing-unit:     30px;
+
+$text-color:       #111;
+$background-color: #fdfdfd;
+$brand-color:      #0874df;
+
+$grey-color:       #292929;
+$grey-color-light: lighten($grey-color, 70%);
+$grey-color-dark:  darken($grey-color, 25%);
+$red-color:        rgb(223, 68, 62);
+$red-color-light:  lighten($red-color, 30%);
+$light-grey:       #F2F1EF;
+$pink-color:       #F49BC2;
+$dark-pink-color:  #c400bd;
+$purple-color:     #313887;
+$lt-purple-color:  #505085;
+
+// istanbuljs colors.
+$js-yellow: rgb(247, 220, 0);
+
+// Width of the content area
+$content-width:    1250px;
+$heading-width:    1450px;
+
+$on-palm:          600px;
+$on-laptop:        800px;
+
+
+
+// Using media queries with like this:
+// @include media-query($on-palm) {
+//     .wrapper {
+//         padding-right: $spacing-unit / 2;
+//         padding-left: $spacing-unit / 2;
+//     }
+// }
+@mixin media-query($device) {
+    @media screen and (max-width: $device) {
+        @content;
+    }
+}
+
+
+
+// Import partials from `sass_dir` (defaults to `_sass`)
+@import
+        "base",
+        "contributing",
+        "landing",
+        "layout",
+        "docs",
+        "blog",
+        "syntax-highlighting"
+;

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  {% include head.html %}
+
+  <body>
+
+    {% include header.html %}
+
+    <div class="page">
+
+      <div class="wrapper">
+        <div class="page-content align-items">
+          <div class="page-box-full markdown-body" style="padding-top: 65px;">
+            {{ content }}
+          </div>
+          <div class="page-box" style="padding-top: 65px;">
+            {{ page.tldr }}
+          </div>
+        </div>
+      </div>
+    </div>
+
+    {% include footer.html %}
+
+  </body>
+
+</html>
