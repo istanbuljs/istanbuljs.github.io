@@ -1,0 +1,6 @@
+.container {
+  @media (width >= 70rem) {
+    width: 30%;
+    padding-left: 2rem;
+  }
+}

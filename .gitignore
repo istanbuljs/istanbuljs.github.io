@@ -1,5 +1,6 @@
-.DS_Store
+# node / npm
 node_modules
-tmp
-_site
-.sass-cache
+*.log
+
+# phenomic build
+dist
