@@ -3,6 +3,9 @@ metaTitle: Istanbul, a JavaScript test coverage tool.
 superTitle: JavaScript test coverage made simple.
 title: How Istanbul works
 layout: WithQuickStart
+QuickStart:
+  title: mocha
+  cmd: mocha
 ---
 
 Istanbul instruments your ES5 and ES2015+ JavaScript code with line counters,
@@ -10,9 +13,9 @@ so that you can track how well your unit-tests exercise your codebase.
 
 The [nyc](https://github.com/istanbuljs/nyc) command-line-client for Istanbul
 works well with most JavaScript testing frameworks:
-[tap](#todo),
-[mocha](#todo),
-[AVA](#todo),
+[tap](https://github.com/tapjs/node-tap),
+[mocha](https://github.com/mochajs/mocha),
+[AVA](https://github.com/avajs/ava),
 etc.
 
 ## Features
