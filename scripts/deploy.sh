@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
-GIT_DEPLOY_REPO=${GIT_DEPLOY_REPO:-$(node -e 'process.stdout.write(require("./package.json").repository)')}
 git config --global user.email "ben@npmjs.com"
 git config --global user.name "bcoe"
 
@@ -8,4 +7,4 @@ $(npm bin)/rimraf .git
 git init && \
 git add . && \
 git commit -m "Deploy to GitHub Pages" && \
-git push --force "${GIT_DEPLOY_REPO}" master
+git push --force "https://$GH_TOKEN@github.com/istanbuljs/istanbuljs.github.io.git" master
