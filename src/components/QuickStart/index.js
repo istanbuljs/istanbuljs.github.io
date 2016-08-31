@@ -4,53 +4,59 @@ import Lowlight from "react-lowlight"
 import styles from "./index.css"
 
 const QuickStart = ({ title, cmd }) => {
-  return (
-    <section className={ styles.container }>
-      <h1>Quick Start</h1>
-      {
-        title &&
-        <p>
-          Adding coverage to your { title } tests couldn't be easier
-        </p>
-      }
-      {
-        !title &&
-        <p>
-          Open your terminal, navigate to your project,
-          and install
-          { " " }
-          <a href="https://github.com/istanbuljs/nyc">nyc</a>,
-          Istanbul's command-line-interface:
-        </p>
-      }
-      <div className="sh-code">
-        $ npm install --save-dev nyc
-      </div>
-      <p>
-        Now, simply place the command <strong>nyc</strong> in front of your
-        existing test command, for example:
-      </p>
-      <Lowlight
-        language="json"
-        value={
-            `{
-  "scripts": {
-    "test": {
-      "nyc ${ cmd }"
-    }
-  }
-}`
+  if (cmd)
+    return (
+      <section className={ styles.container }>
+        <h1>Quick Start</h1>
+        {
+          title &&
+          <p>
+            Adding coverage to your { title } tests couldn't be easier
+          </p>
         }
-      />
-      {
-        !title &&
+        {
+          !title &&
+          <p>
+            Open your terminal, navigate to your project,
+            and install
+            { " " }
+            <a href="https://github.com/istanbuljs/nyc">nyc</a>,
+            Istanbul's command-line-interface:
+          </p>
+        }
+        <div className="sh-code">
+          $ npm install --save-dev nyc
+        </div>
         <p>
-          See the <strong>tutorials</strong> section, for framework specific
-          documentation.
+          Now, simply place the command <strong>nyc</strong> in front of your
+          existing test command, for example:
         </p>
+        <Lowlight
+          language="json"
+          value={
+              `{
+    "scripts": {
+      "test": {
+        "nyc ${ cmd }"
       }
-    </section>
-  )
+    }
+  }`
+          }
+        />
+        {
+          !title &&
+          <p>
+            See the <strong>tutorials</strong> section, for framework specific
+            documentation.
+          </p>
+        }
+      </section>
+    )
+  else
+    return (
+      <section className={ styles.container }>
+      </section>
+    )
 }
 
 QuickStart.propTypes = {
@@ -59,7 +65,7 @@ QuickStart.propTypes = {
 }
 
 QuickStart.defaultProps = {
-  cmd: "mocha",
+  cmd: null,
 }
 
 export default QuickStart
