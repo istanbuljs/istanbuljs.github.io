@@ -1,0 +1,36 @@
+.sh-code,
+.hljs {
+  background-color: #f5c3c1;
+  font-family: monospace;
+  font-weight: 600;
+  padding: 0.5em 1em;
+  border-radius: 0.35em;
+  margin-bottom: 12px;
+}
+
+/*
+.sh-code {
+
+}
+*/
+
+.hljs {
+  display: block;
+  overflow-x: auto;
+}
+
+.hljs-string {
+  color: #313887;
+}
+
+.hljs-keyword {
+  color: #c400bd;
+}
+
+.hljs-built_in {
+  color: #505085;
+}
+
+.hljs-regexp {
+  color: #b44c4c;
+}

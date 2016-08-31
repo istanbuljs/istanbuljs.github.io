@@ -1,0 +1,29 @@
+.layout {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  flex: 1;
+  margin: 0 auto;
+  max-width: 100%;
+
+  @media (width >= 70rem) {
+    max-width: 70rem;
+  }
+
+  padding: 1rem 0.75rem;
+}
+
+.content img {
+  max-width: 100%;
+}
+
+.content ul {
+  /* padding: 0; */
+}
+
+.content li > p {
+  margin: 0;
+}
