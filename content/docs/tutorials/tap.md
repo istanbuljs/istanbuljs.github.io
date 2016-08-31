@@ -3,16 +3,14 @@ title: Using Istanbul With Node Tap
 layout: WithQuickStart
 QuickStart:
   title: Node Tap
-  cmd: tap
 ---
 
-At the end of the day, all you need to do is place the bin **nyc** in front of the
-existing test scripts in your package.json:
+<a href="https://github.com/tapjs/node-tap" target="_blank">Node Tap</a> uses nyc to track code coverage, even across subprocess boundaries. It is included by default, and there’s nothing you need to do but enable it.
 
 ```json
 {
   "scripts": {
-    "test": "nyc tap --timeout=3000"
+    "test": "tap test/*.js --coverage"
   }
 }
 ```
@@ -23,11 +21,11 @@ subprocesses that it spawns.
 ## Using Alternative Reporters
 
 By default nyc uses Istanbul's `text` reporter. Various other reporters are
-tapilable in the <a href="https://github.com/istanbuljs/istanbul-reports/tree/master/lib">istanbul-reports</a>
+available in the <a href="https://github.com/istanbuljs/istanbul-reports/tree/master/lib">istanbul-reports</a>
 repo.
 
 If you'd like to specify alternate reporter, or would like to run
-multiple reporters, simply use the `--reporter` flag.
+multiple reporters, simply use the `--coverage-report` flag.
 
 _for instance, suppose you would like to output the default text report, along
 with an HTML coverage report._
@@ -35,7 +33,7 @@ with an HTML coverage report._
 ```json
 {
   "scripts": {
-    "test": "nyc --reporter=html --reporter=text tap"
+    "test": "tap --coverage-report=lcov"
   }
 }
 ```
@@ -59,8 +57,8 @@ npm install coveralls --save-dev
 ```json
 {
   "script": {
-     "test": "nyc --reporter=html --reporter=text tap",
-     "coverage": "nyc report --reporter=text-lcov | coveralls"
+     "test": "tap test/*.js --coverage",
+     "coverage": "tap --coverage-report=lcov | coveralls"
   }
 }
 ```
