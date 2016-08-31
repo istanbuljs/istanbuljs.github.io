@@ -10,3 +10,17 @@ matrix:
 cache:
   directories:
     - node_modules
+
+# deploy is run after "npm test"
+deploy:
+  # keep the build we just made with "npm test" (dist/)
+  skip_cleanup: true
+
+  # define the script to use for deployment
+  provider: script
+  script: ./scripts/deploy.sh
+
+  # only run on one version of node (v5 here)
+  on:
+    branch: master # ⚠️ OR SRC IF YOU USE USERNAME.GITHUB.IO
+    node: '6'
