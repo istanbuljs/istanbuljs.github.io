@@ -36,9 +36,7 @@ const QuickStart = ({ title, cmd }) => {
           value={
               `{
     "scripts": {
-      "test": {
-        "nyc ${ cmd }"
-      }
+      "test": "nyc ${ cmd }"
     }
   }`
           }
