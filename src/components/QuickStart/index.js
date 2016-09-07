@@ -35,12 +35,10 @@ const QuickStart = ({ title, cmd }) => {
           language="json"
           value={
               `{
-    "scripts": {
-      "test": {
-        "nyc ${ cmd }"
-      }
-    }
-  }`
+  "scripts": {
+    "test": "nyc ${ cmd }"
+  }
+}`
           }
         />
         {
