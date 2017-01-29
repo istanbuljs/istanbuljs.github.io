@@ -46,7 +46,6 @@ const QuickStart = ({ title, cmd }) => {
           <p>
             See the <strong>tutorials</strong> section, for framework specific
             documentation.
-          </p>
         }
       </section>
     )
