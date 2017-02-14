@@ -6,3 +6,4 @@ title: Tutorials
 - [tap](./tap/)
 - [ES2015+](./es2015/)
 - [AVA](./ava/)
+- [IoT.js](./iotjs/)
