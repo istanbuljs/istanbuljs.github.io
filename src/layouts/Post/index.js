@@ -17,7 +17,7 @@ class Post extends Component {
         { ...props }
         header={
           <header>
-          {
+            {
             pageDate &&
             <time key={ pageDate.toISOString() }>
               { pageDate.toDateString() }

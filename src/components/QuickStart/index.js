@@ -51,8 +51,7 @@ const QuickStart = ({ title, cmd }) => {
     )
   else
     return (
-      <section className={ styles.container }>
-      </section>
+      <section className={ styles.container } />
     )
 }
 
