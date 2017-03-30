@@ -73,6 +73,10 @@ npm install coveralls --save-dev
 after_success: npm run coverage
 ```
 
+## What about TypeScript?
+
+[AVA has a TypeScript recipe](https://github.com/avajs/ava/blob/master/docs/recipes/typescript.md) that should get you started. Feel free to contribute to their docs or make a PR [here](https://github.com/istanbuljs/istanbuljs.github.io) if you have more details to share! :smile:
+
 ## What Now?
 
 nyc and Istanbul provide many advanced configuration options a good place to
