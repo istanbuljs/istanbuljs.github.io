@@ -11,7 +11,7 @@ const QuickStart = ({ title, cmd }) => {
         {
           title &&
           <p>
-            Adding coverage to your { title } tests couldn't be easier
+            Adding coverage to your { title } tests could not be easier
           </p>
         }
         {
@@ -21,7 +21,7 @@ const QuickStart = ({ title, cmd }) => {
             and install
             { " " }
             <a href="https://github.com/istanbuljs/nyc">nyc</a>,
-            Istanbul's command-line-interface:
+            ${"Istanbul's"} command-line-interface:
           </p>
         }
         <div className="sh-code">

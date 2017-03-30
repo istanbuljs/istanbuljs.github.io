@@ -37,6 +37,7 @@
       "eslint-config-i-am-meticulous/react"
     ],
     "rules": {
+      "import/no-namespace": 0,
       "react/jsx-no-literals": 0,
       "react/prefer-stateless-function": 0
     }
@@ -83,11 +84,13 @@
     "react-svg-inline": "^1.1.0",
     "react-topbar-progress-indicator": "^1.0.0",
     "redux": "^3.0.0",
-    "style-loader": "^0.12.3",
+    "style-loader": "^0.13.1",
     "stylelint": "^7.9.0",
     "stylelint-config-standard": "^16.0.0",
-    "style-loader": "^0.13.1",
     "webpack": "^1.12.1",
     "whatwg-fetch": "^2.0.2"
+  },
+  "dependencies": {
+    "classnames": "^2.2.5"
   }
 }
