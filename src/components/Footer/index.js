@@ -20,16 +20,16 @@ export default class Footer extends Component {
             allowTransparency="true"
             frameBorder="0"
             scrolling="0"
-            style={ {
+            style={{
               width: "135px",
               height: "30px",
               verticalAlign: "middle",
-            } }
+            }}
             src={
               "https://ghbtns.com/github-btn.html?" +
               "user=istanbuljs&repo=nyc&type=star&count=true&size=large"
             }
-          ></iframe>
+          />
           <a href={ pkg.github }>Istanbul</a>
           { " · " }
           v1
