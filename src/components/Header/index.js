@@ -45,6 +45,12 @@ export default class Header extends Component {
             </Link>
             <Link
               className={ styles.link }
+              to="/docs/advanced/"
+            >
+              { "Advanced Features" }
+            </Link>
+            <Link
+              className={ styles.link }
               to="/contributing/"
             >
               { "Contributing" }
