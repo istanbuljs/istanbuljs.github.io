@@ -75,7 +75,7 @@
     "style-loader": "^0.13.1",
     "stylelint": "^7.9.0",
     "stylelint-config-standard": "^16.0.0",
-    "webpack": "^1.12.1",
+    "webpack": "^2.5.0",
     "whatwg-fetch": "^2.0.2"
   },
   "dependencies": {
