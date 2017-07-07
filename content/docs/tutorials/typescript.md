@@ -24,9 +24,10 @@ Thanks to [@mohsen1's](http://github.com/mohsen1) [post](http://azimi.me/2016/09
     "exclude": [
       "**/*.d.ts"
     ],
-    "require": [
-      "ts-node/register"
-    ]
+    "reporter": [
+      "html"
+    ],
+    "all": true  
   }
 }
 ```
@@ -34,7 +35,7 @@ Thanks to [@mohsen1's](http://github.com/mohsen1) [post](http://azimi.me/2016/09
 ## `test/mocha.opts`
 
 ```
---compilers ts-node/register
+--require ts-node/register
 --require source-map-support/register
 --recursive
 <glob for your test files>
