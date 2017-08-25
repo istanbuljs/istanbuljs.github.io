@@ -57,7 +57,7 @@
     "json-loader": "^0.5.2",
     "lowlight": "^1.2.0",
     "npm-run-all": "^4.0.1",
-    "phenomic": "^0.16.2",
+    "phenomic": "^0.21.2",
     "postcss-browser-reporter": "^0.5.0",
     "postcss-cssnext": "^2.4.0",
     "postcss-loader": "^1.2.2",
