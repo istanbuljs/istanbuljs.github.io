@@ -70,7 +70,7 @@
     "react-redux": "^5.0.2",
     "react-router": "^3.0.2",
     "react-svg-inline": "^1.1.0",
-    "react-topbar-progress-indicator": "^1.0.0",
+    "react-topbar-progress-indicator": "^2.0.0",
     "redux": "^3.6.0",
     "style-loader": "^0.13.1",
     "stylelint": "^7.9.0",
