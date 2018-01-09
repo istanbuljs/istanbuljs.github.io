@@ -25,7 +25,7 @@ subprocesses that it spawns.
 ## Using Alternative Reporters
 
 By default nyc uses Istanbul's `text` reporter. Various other reporters are
-available. You can view the full list on the [Using Alternative Reporters](../advanced/alternative-reporters) page.
+available. You can view the full list on the [Using Alternative Reporters](../../advanced/alternative-reporters) page.
 
 If you'd like to specify alternate reporter, or would like to run
 multiple reporters, simply use the `--reporter` flag.
