@@ -55,6 +55,13 @@ export default class Header extends Component {
             >
               { "Contributing" }
             </Link>
+            <a
+              className={ styles.link }
+              // eslint-disable-next-line max-len
+              href={ "https://github.com/istanbuljs/nyc/issues?utf8=%E2%9C%93&q=label%3Aquestion+" }
+            >
+              { "FAQ" }
+            </a>
             {
               // only in dev for now
               process.env.NODE_ENV !== "production" &&
