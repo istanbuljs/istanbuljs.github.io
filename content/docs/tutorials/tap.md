@@ -35,7 +35,7 @@ As of version 7, node-tap lets you easily enforce 100% coverage of all lines, br
 ## Using Alternative Reporters
 
 By default nyc uses Istanbul's `text` reporter. Various other reporters are
-available. You can view the full list on the [Using Alternative Reporters](../advanced/alternative-reporters) page.
+available. You can view the full list on the [Using Alternative Reporters](../../advanced/alternative-reporters) page.
 
 If you'd like to specify alternate reporter, use the `--coverage-report` flag.
 
