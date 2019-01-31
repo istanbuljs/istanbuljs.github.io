@@ -1,5 +1,5 @@
 ---
-title: Tools That Integrate With Istanbul
+title: Tools That Integrate With Istanbul API's
 ---
 
 The following tools integrate with Istanbul to provide JavaScript
@@ -9,9 +9,8 @@ test coverage:
   with V8's built in coverage enabled. Uses Istanbul reports for displaying
   coverage.
 * [Jest](https://github.com/facebook/jest): JavaScript testing solution that
-  works out of the box for any React project. Uses Istanbul's API for providing
-  coverage reports.
+  works out of the box for any JavaScript project. Uses Istanbul's API for collecting coverage data and providing coverage reports.
 * [node-tap](https://github.com/tapjs/node-tap): a testing framework that bundles
   nyc for test coverage.
 * [nyc](https://github.com/istanbuljs/nyc): command line tool for instrumenting
-  code with Istanbul coverage (the successor to [istanbul](https://www.npmjs.com/package/istanbul)).
+  code with Istanbul coverage (the successor to the [istanbul](https://www.npmjs.com/package/istanbul) command line tool).
