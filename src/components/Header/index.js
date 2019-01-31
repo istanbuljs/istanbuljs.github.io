@@ -55,6 +55,12 @@ export default class Header extends Component {
             >
               { "Contributing" }
             </Link>
+            <Link
+              className={ styles.link }
+              to="/integrations/"
+            >
+              { "Integrations" }
+            </Link>
             <a
               className={ styles.link }
               // eslint-disable-next-line max-len
