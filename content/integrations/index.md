@@ -12,5 +12,5 @@ test coverage:
   coverage.
 * [Jest](https://github.com/facebook/jest): JavaScript testing solution that
   works out of the box for any JavaScript project. Uses Istanbul's API for collecting coverage data and providing coverage reports.
-* [node-tap](https://github.com/tapjs/node-tap): a testing framework that bundles
+* [node-tap](https://www.node-tap.org/): a testing framework that bundles
   nyc for test coverage.
