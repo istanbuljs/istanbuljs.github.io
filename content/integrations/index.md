@@ -14,3 +14,4 @@ test coverage:
   works out of the box for any JavaScript project. Uses Istanbul's API for collecting coverage data and providing coverage reports.
 * [node-tap](https://www.node-tap.org/): a testing framework that bundles
   nyc for test coverage.
+* [jsfuzz](https://github.com/fuzzitdev/jsfuzz): Fuzz testing framework. Uses Istanbul's API for collecting coverage and guiding fuzzing process.
