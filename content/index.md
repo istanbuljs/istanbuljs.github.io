@@ -25,5 +25,5 @@ etc.
 - A collection of reporters, providing both terminal and HTML output:
   ![terminal output](/assets/terminal.png)
   ![browser output](/assets/browser.png)
-- Support for the most popular JavaScript testing frameworks (see our **tutorials**).
+- Support for the most popular JavaScript testing frameworks (see our [**tutorials**](https://istanbul.js.org/docs/tutorials/) ).
 - Support for instrumenting subprocesses, using the nyc command-line-interface.
