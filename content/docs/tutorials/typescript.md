@@ -32,7 +32,9 @@ Thanks to [@mohsen1's](http://github.com/mohsen1) [post](http://azimi.me/2016/09
 }
 ```
 
-## `.mocharc.json`
+## Mocha configration file
+### `.mocharc.json`
+If you're using v6.0.0 or later:
 
 ```json5
 {
@@ -43,6 +45,18 @@ Thanks to [@mohsen1's](http://github.com/mohsen1) [post](http://azimi.me/2016/09
   ],
   "recursive": true
 }
+```
+
+You can also use other file format. See [Mocha document](https://mochajs.org/#configuring-mocha-nodejs).
+
+### `test/mocha.opts`
+If you are using less than v6.0.0:
+
+```
+--require ts-node/register # replace with ts-node/register/transpile-only if you have custom types
+--require source-map-support/register
+--recursive
+<glob for your test files>
 ```
 
 If you're having trouble, try looking at the [existing TypeScript issues](https://github.com/istanbuljs/nyc/issues?utf8=%E2%9C%93&q=label%3ATypeScript+) for troubleshooting steps.
