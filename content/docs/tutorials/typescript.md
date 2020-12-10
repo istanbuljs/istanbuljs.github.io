@@ -47,7 +47,7 @@ If you're using v6.0.0 or later:
 }
 ```
 
-You can also use other file format. See [Mocha document](https://mochajs.org/#configuring-mocha-nodejs).
+You can also use other file formats, see [mocha's docs](https://mochajs.org/#configuring-mocha-nodejs).
 
 ### `test/mocha.opts`
 If you are using less than v6.0.0:
