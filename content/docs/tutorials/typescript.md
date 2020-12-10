@@ -32,7 +32,25 @@ Thanks to [@mohsen1's](http://github.com/mohsen1) [post](http://azimi.me/2016/09
 }
 ```
 
-## `test/mocha.opts`
+## Mocha configration file
+### `.mocharc.json`
+If you're using v6.0.0 or later:
+
+```json5
+{
+  "spec": "<glob for your test files>",
+  "require": [
+    "ts-node/register", // replace with ts-node/register/transpile-only if you have custom types
+    "source-map-support/register"
+  ],
+  "recursive": true
+}
+```
+
+You can also use other file formats, see [mocha's docs](https://mochajs.org/#configuring-mocha-nodejs).
+
+### `test/mocha.opts`
+If you are using less than v6.0.0:
 
 ```
 --require ts-node/register # replace with ts-node/register/transpile-only if you have custom types
