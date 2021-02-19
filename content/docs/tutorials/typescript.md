@@ -59,4 +59,4 @@ If you are using less than v6.0.0:
 <glob for your test files>
 ```
 
-If you're having trouble, try looking at the [existing TypeScript issues](https://github.com/istanbuljs/nyc/issues?utf8=%E2%9C%93&q=label%3ATypeScript+) for troubleshooting steps.
+If you're having trouble, try looking at the [existing TypeScript issues](https://github.com/istanbuljs/nyc/issues?q=label%3ATypeScript) for troubleshooting steps.
